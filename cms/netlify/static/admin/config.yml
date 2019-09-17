@@ -30,3 +30,17 @@ collections:
       - {label: "Name", name: "name", widget: "string"}
       - {label: "Image", name: "image", widget: "image"}
       - {label: "Description", name: "description", widget: "markdown"}
+  - name: "pages" # Used in routes, e.g., /admin/collections/blog
+    label: "Pages" # Used in the UI
+    preview_path: "{{slug}}"
+    folder: "pages" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "{{slug}}" # Filename template, e.g., title.md
+    fields: # The fields for each document, usually in front matter
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Subtitle", name: "subtitle", widget: "string"}
+      - {label: "Category", name: "category", widget: "relation", collection: "categories", searchFields: "name", valueField: "name", multiple: true}
+      - {label: "Author", name: "author", widget: "string", default: "Daniel Kelly"}
+      - {label: "Publish Date", name: "date", widget: "datetime"}
+      - {label: "Featured Image", name: "featureImage", widget: "image"}
+      - {label: "Body", name: "body", widget: "markdown"}
