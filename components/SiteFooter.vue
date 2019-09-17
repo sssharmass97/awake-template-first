@@ -5,7 +5,7 @@
             <div class="footer__column footer__column--left">
                 <div class="footer__logo">
                     <a href="/" class="footer__logo__link">
-                        <img src="/uploads/logo.svg" alt="doefeed logo" style="width: 170px; margin-bottom: 15px;" class="footer__logo__image">
+                        <img src="/img/logo.svg" alt="doefeed logo" style="width: 170px; margin-bottom: 15px;" class="footer__logo__image">
                         
                     </a>
                 </div>
